@@ -1,8 +1,5 @@
 # 30days-of-code
 
-
-
-
 HackerRank 30 days of code
 
 Ready to become a better coder? Practicing for a programming job interview?
