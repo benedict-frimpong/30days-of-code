@@ -1,6 +1,7 @@
 /*
 Objective
 In this challenge, you will work with arithmetic operators. Check out the Tutorial tab for learning materials and an instructional video.
+https://www.hackerrank.com/challenges/30-operators/tutorial
 
 Task
 Given the meal price (base cost of a meal), tip percent (the percentage of the meal price being added as tip), and tax percent (the percentage of the meal price being added as tax) for a meal, find and print the meal's total cost. Round the result to the nearest integer.
@@ -44,9 +45,17 @@ We round  to the nearest integer and print the result, 15.
 
 
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
 
 class Result {
 
@@ -61,7 +70,11 @@ class Result {
 
     public static void solve(double meal_cost, int tip_percent, int tax_percent) {
     // Write your code here
+        double tip = (tip_percent/100.0)*meal_cost;
+        double tax = (tax_percent/100.0)*meal_cost;
+        double total_cost = (meal_cost + tip + tax);
 
+        System.out.println(Math.round(total_cost));
     }
 
 }
