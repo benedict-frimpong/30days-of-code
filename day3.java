@@ -52,16 +52,19 @@ public class day3 {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         int N = Integer.parseInt(bufferedReader.readLine().trim());
-
+//If n is odd, print Weird
         if (N % 2 != 0){
             System.out.println("Weird");
         }
+//If n is even and in the inclusive range of 2 to 5, print Not Weird
         else if (N % 2 == 0 && (N >= 2 && N <= 5)){
             System.out.println("Not Weird");
         }
+//If n is even and in the inclusive range of 6 to 20, print Weird
         else if (N % 2 == 0 && (N >= 6 && N <= 20)){
             System.out.println("Weird");
         }
+//If n is even and greater than 20, print Not Weird
         else if (N % 2 == 0 && N > 20){
             System.out.println("Not Weird");
         }
